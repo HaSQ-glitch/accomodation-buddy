@@ -1,0 +1,9 @@
+html{
+    scroll-behavior: smooth;
+}
+body { font-family: Arial; margin:0; padding:0; }
+nav { background:#0073e6; padding:10px; display:flex; gap:15px; }
+nav a { color:white; text-decoration:none; }
+.hero { text-align:center; padding:60px 20px; background:#f4f4f4; }
+.hero button { padding:10px 20px; margin-top:20px; cursor:pointer; }
+.about { padding:40px 20px; background:white; margin:20px; border-radius:5px; }
