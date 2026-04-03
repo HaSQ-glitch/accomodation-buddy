@@ -1,9 +1,101 @@
-html{
+/* Smooth scrolling */
+html {
     scroll-behavior: smooth;
 }
-body { font-family: Arial; margin:0; padding:0; }
-nav { background:#0073e6; padding:10px; display:flex; gap:15px; }
-nav a { color:white; text-decoration:none; }
-.hero { text-align:center; padding:60px 20px; background:#f4f4f4; }
-.hero button { padding:10px 20px; margin-top:20px; cursor:pointer; }
-.about { padding:40px 20px; background:white; margin:20px; border-radius:5px; }
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav {
+    background: #0073e6;
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section (FIXED SIZE) */
+.hero {
+    height: 70vh; /* slightly taller */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 40px 20px;
+
+    background-image: url("index.webp");
+    background-size: cover;
+    height: 70vh;
+    background-color: black;
+    background-position: center bottom; /* KEY FIX */
+    background-repeat: no-repeat;
+
+    color: white;
+    position: relative;
+}
+
+/* Overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Keep text above */
+.hero * {
+    position: relative;
+}
+
+/* Text */
+.hero h1 {
+    font-size: 2.2rem; /* slightly smaller */
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1rem;
+}
+
+/* Button */
+.hero button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    background: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #005bb5;
+}
+
+/* About Section (FIXED BORDER + SIZE) */
+.about {
+    padding: 40px 20px; /* reduced */
+    background: #f9f9f9;
+    margin: 10px; /* reduced from 20px */
+    border-radius: 5px; /* smaller curve */
+}
+
+.about h2 {
+    margin-bottom: 10px;
+}
