@@ -8,6 +8,7 @@
 </head>
 <body>
 
+    <!-- Navbar -->
     <nav>
         <a href="index.html">Home</a>
         <a href="index.html#about">About</a>
@@ -15,20 +16,29 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    <h2>Available Rooms</h2>
-    <div class="room-list" id="roomList">
-        <div class="room" data-status="Available">
-            <img src="images/room1.jpg" alt="Single Room">
-            <h3>Single Room</h3>
-            <p>£400/month</p>
-        </div>
-        <div class="room" data-status="Booked">
-            <img src="images/flat1.jpg" alt="1-Bed Flat">
-            <h3>1-Bed Flat</h3>
-            <p>£800/month</p>
-        </div>
-    </div>
+    <!-- Rooms Section -->
+    <section id="rooms">
+        <h2>Available Rooms</h2>
 
+        <div class="room-list" id="roomList">
+            
+            <div class="room" data-status="Available">
+                <img src="images/room1.jpg" alt="Single Room">
+                <h3>Single Room</h3>
+                <p>£400/month</p>
+            </div>
+
+            <div class="room" data-status="Booked">
+                <img src="images/flat1.jpg" alt="1-Bed Flat">
+                <h3>1-Bed Flat</h3>
+                <p>£800/month</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- JS -->
     <script src="rooms.js"></script>
+
 </body>
 </html>
