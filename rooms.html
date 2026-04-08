@@ -22,22 +22,29 @@
 
         <div class="room-list" id="roomList">
             
-            <div class="room" data-status="Available">
-                <img src="images/room1.jpg" alt="Single Room">
-                <h3>Single Room</h3>
-                <p>£400/month</p>
-            </div>
+            <!-- Room 1 -->
+            <a href="shared-room.html" class="room-link">
+                <div class="room" data-status="Available">
+                    <span class="badge available">Available</span>
+                    <img src="shared bed.webp" alt="Single Room">
+                    <h3>Shared Flat</h3>
+                    <p>£650/month</p>
+                </div>
+            </a>
 
-            <div class="room" data-status="Booked">
-                <img src="images/flat1.jpg" alt="1-Bed Flat">
-                <h3>1-Bed Flat</h3>
-                <p>£800/month</p>
-            </div>
+            <!-- Room 2 -->
+            <a href="flat.html" class="room-link">
+                <div class="room" data-status="Available">
+                    <span class="badge booked">Available</span>
+                    <img src="1-bed-flat.webp" alt="1-Bed Flat">
+                    <h3>1 Bed-Flat</h3>
+                    <p>£800/month</p>
+                </div>
+            </a>
 
         </div>
     </section>
 
-    <!-- JS -->
     <script src="rooms.js"></script>
 
 </body>
