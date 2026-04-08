@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+/* NAVBAR */
+nav {
+    background: #0073e6;
+    padding: 15px 20px;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MAIN LAYOUT */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+/* LEFT SIDE */
+.left {
+    flex: 2;
+}
+
+/* RIGHT SIDE */
+.right {
+    flex: 1;
+}
+
+/* GALLERY */
+.gallery {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.main-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.small-imgs {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.small-imgs img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.small-imgs img:hover {
+    transform: scale(1.05);
+}
+
+/* TEXT */
+h2 {
+    margin-top: 15px;
+}
+
+.location {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+/* FEATURES */
+.features {
+    margin: 15px 0;
+}
+
+.features span {
+    display: inline-block;
+    background: #eee;
+    padding: 8px 10px;
+    margin: 5px 5px 0 0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* DESCRIPTION */
+.description {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* BOOKING BOX */
+.booking-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.booking-box h3 {
+    margin-top: 0;
+}
+
+.booking-box label {
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+}
+
+.booking-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.booking-box button {
+    width: 100%;
+    padding: 12px;
+    background: #ff5a5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.booking-box button:hover {
+    background: #e14b4f;
+}
+
+/* INFO BOX */
+.info-box {
+    margin-top: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.info-box p {
+    margin: 8px 0;
+}
+
+/* RESPONSIVE (IMPORTANT) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .main-img {
+        height: 220px;
+    }
+}
