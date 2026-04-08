@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+/* Navbar */
+nav {
+    background: #0073e6;
+    padding: 12px;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* LEFT SIDE */
+.left {
+    flex: 2;
+}
+
+/* Gallery */
+.gallery {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.main-img {
+    width: 50%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.small-imgs {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.small-imgs img:hoover {
+    transform: scale(1.05);
+    transform: 0.3s;
+
+    width: 10%;
+    height: 20px;
+    object-fit: cover; /* keeps ratio,fills box */
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Text */
+.price {
+    color: #0073e6;
+    font-weight: bold;
+}
+
+/* Details */
+.details {
+    background: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* RIGHT SIDE */
+.right {
+    flex: 1;
+}
+
+/* Booking Box */
+.booking-box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.booking-box input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+.booking-box button {
+    width: 100%;
+    padding: 10px;
+    background: orange;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Info Box */
+.info-box {
+    background: white;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
