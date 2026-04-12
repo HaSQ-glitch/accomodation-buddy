@@ -25,17 +25,18 @@
 
             <!-- Image Gallery -->
             <div class="image-gallery">
-                <img src="images/1-bed-flat.webp" class="main-img">
+                <img src="1-bed-flat.webp" class="main-img">
 
                 <div class="small-imgs">
-                    <img src="images/1-bed-flat(i).webp">
-                    <img src="images/1-bed-flat(ii).webp">
+                    <img src="1-bed-flat(i).webp">
+                    <img src="1-bed-flat(ii).webp">
                     
                 </div>
             </div>
 
             <!-- Title -->
             <h2>1-Bed Flat in London</h2>
+            <h3>Liverpool street station , EC2M 7PY</h3>
             <p class="price">£800/month</p>
 
             <!-- Details -->
@@ -83,6 +84,21 @@
         </div>
 
     </div>
+    <script>
+    const mainImg = document.querySelector(".main-img");
+    const thumbs = document.querySelectorAll(".small-imgs img");
+
+    thumbs.forEach(img => {
+        img.addEventListener("click", () => {
+            mainImg.style.opacity = "0";
+
+            setTimeout(() => {
+                mainImg.src = img.src;
+                mainImg.style.opacity = "1";
+            }, 200);
+        });
+    });
+    </script>
 
 </body>
 </html>
