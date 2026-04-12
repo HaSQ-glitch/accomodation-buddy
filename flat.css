@@ -30,7 +30,7 @@ nav a {
 }
 
 /* Gallery */
-.gallery {
+.image-gallery {
     background: white;
     padding: 10px;
     border-radius: 8px;
@@ -54,7 +54,7 @@ nav a {
     transform: 0.3s;
 
     width: 10%;
-    height: 20px;
+    height: 10px;
     object-fit: cover; /* keeps ratio,fills box */
     border-radius: 6px;
     cursor: pointer;
@@ -109,4 +109,87 @@ nav a {
     padding: 15px;
     margin-top: 15px;
     border-radius: 8px;
+}
+/* =========================
+   PAGE FADE IN
+========================= */
+body {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   MAIN IMAGE HOVER
+   (NO SIZE CHANGE)
+========================= */
+.main-img {
+    transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.main-img:hover {
+    transform: scale(1.02);
+}
+
+/* =========================
+   THUMBNAIL HOVER
+========================= */
+.small-imgs img {
+    transition: transform 0.3s ease;
+}
+
+.small-imgs img:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   CARD HOVER EFFECT
+========================= */
+.booking-box,
+.details,
+.info-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.booking-box:hover,
+.details:hover,
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   BUTTON ANIMATION
+========================= */
+.booking-box button {
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.booking-box button:hover {
+    transform: scale(1.05);
+    background: #ff8c00;
+}
+
+.booking-box button:active {
+    transform: scale(0.95);
+}
+
+/* =========================
+   NAVBAR HOVER EFFECT
+========================= */
+nav a {
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700;
 }
