@@ -3,36 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Accommodation - Booking</title>
+    <title>Book a Room</title>
     <link rel="stylesheet" href="style-contact.css">
 </head>
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="index.html#about">About</a>
-        <a href="rooms.html">Rooms</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<!-- Navbar -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="rooms.html">Rooms</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
-    <h2>Book a Room</h2>
-    <form id="bookingForm">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Email" required>
-        <select id="room" required>
-            <option>Single Room</option>
-            <option>Double Room</option>
-            <option>1-Bed Flat</option>
-            <option>2-Bed Flat</option>
-        </select>
-        <button type="submit">Book Now</button>
-    </form>
-    <p id="bookingMessage"></p>
+<!-- Form Section -->
+<div class="container">
+    <div>
+        <h2>Book a Room</h2>
 
-    <footer>
-        <p>&copy; 2026 Student Accommodation</p>
-    </footer>
+        <form id="bookingForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email" required>
 
-    <script src="booking.js"></script>
+            <select id="room" required>
+                <option value="">Select Room</option>
+                <option>Single Room</option>
+                <option>Double Room</option>
+                <option>1-Bed Flat</option>
+                <option>2-Bed Flat</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+
+        <!-- Hidden message -->
+        <div id="bookingMessage"></div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Student Accommodation</p>
+</footer>
+
+<script src="contact.js"></script>
 </body>
 </html>
