@@ -1,0 +1,51 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+nav {
+    background: #0073e6;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.payment-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#status {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+}
